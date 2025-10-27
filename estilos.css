@@ -1,0 +1,139 @@
+/* ========================================================= */
+/* VARIABLES */
+/* ========================================================= */
+:root {
+    --color-speed-blue: #007bff;          /* Azul principal (BMW) */
+    --color-speed-blue-dark: #0056b3;     /* Azul más oscuro para hover */
+    --color-dark: #212529;                /* Color de texto principal */
+    --color-text-muted: #6c757d;          /* Texto secundario */
+    --color-light-bg: #f8f9fa;            /* Fondo claro */
+    --font-main: 'Roboto', sans-serif;    /* Fuente principal */
+}
+
+/* ========================================================= */
+/* ESTILOS BÁSICOS */
+/* ========================================================= */
+body {
+    font-family: var(--font-main);
+    color: var(--color-dark);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+/* ========================================================= */
+/* FEATURE SECTIONS */
+/* ========================================================= */
+.feature-section {
+    padding: 90px 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.feature-text {
+    max-width: 450px;
+}
+
+.feature-text h2 {
+    font-size: 2.1rem;
+    margin-bottom: 18px;
+}
+
+.feature-text p {
+    color: var(--color-text-muted);
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.feature-link {
+    color: var(--color-speed-blue);
+    font-size: 0.95rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+}
+
+.feature-link i {
+    font-size: 0.8em;
+    margin-left: 8px;
+    transition: transform 0.3s;
+}
+
+.feature-link:hover {
+    color: var(--color-speed-blue-dark);
+}
+
+.feature-link:hover i {
+    transform: translateX(3px);
+}
+
+.feature-image {
+    max-width: 50%;
+    min-height: 250px;
+}
+
+/* ========================================================= */
+/* IMÁGENES */
+/* ========================================================= */
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ========================================================= */
+/* RESPONSIVE DESIGN */
+/* ========================================================= */
+@media (max-width: 992px) {
+    .feature-item,
+    .feature-item.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .feature-text, .feature-image {
+        max-width: 100%;
+    }
+
+    .feature-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-image {
+        min-height: 200px;
+    }
+
+    .feature-text h2 {
+        font-size: 1.6rem;
+    }
+
+    .feature-link {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Proactive Care</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      color: #333;
+      background-color: #f9fafb;
+    }
+
+    header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background-color: white;
+    }
+
+    header img{
+      height: 40px;
+    }
+
+    header a{
+      text-decoration: none;
+      color: #404f4b;
+      font-weight: 600;
+      margin-left: 16px;
+      border: 1px solid #404f4b;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    header a:hover{
+      background-color: #404f4b;
+      color: white;
+    }
+
+    .hero{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 5%;
+      background-color: white;
+    }
+
+    .hero-text{
+      flex: 1 1 400px;
+    }
+
+    .hero-text h1{
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #404f4b;
+    }
+
+    .hero-text p{
+      font-size: 18px;
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .btn-primary{
+      background-color: #404f4b;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover{
+      background-color: #2e3835;
+    }
+
+    .hero img{
+      flex: 1 1 400px;
+      max-width: 480px;
+      border-radius: 10px;
+    }
+
+    .banner{
+      background-color: #404f4b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .bannerfinal{
+      background-color: #587b72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    footer{
+      background-color: #404f4b;
+      color: white;
+      padding: 40px 5%;
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    footer h3{
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    footer a{
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    footer a:hover{
+      color: white;
+    }
+
+    .opiniones {
+      padding: 80px 0;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .subtitulo {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .cuadros-opinion {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .opinion {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      text-align: left;
+      border: 1px solid #ddd;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
+
+    .opinion:hover {
+      border-color: #003063;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .op-titulo {
+      color: #ca0000;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    .op-texto {
+      color: #222;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .titulo-seccion {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    @media (max-width: 768px){
+      .hero, .item{
+        text-align: center;
+      }
+      .item{
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<!-- jimena -->
+  <header>
+    <img src="logo.jpeg" alt="BMW logo">
+    <div>
+      <a href="#">For Company</a>
+      <a href="#">Log in</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>PROACTIVE CARE.</h1>
+      <p>RELÁJATE, NOSOTROS NOS ENCARGAMOS.</p>
+      <a href="#" class="btn-primary">Encuentra tu socio de servicio BMW</a>
+    </div>
+    <img src="bmwcar.jpg" alt="BMW">
+  </section>
+
+  <section class="banner">
+    The M5 Sedan.
+  </section>
+
+  <!-- Angel -->
+  <section class="feature-section">
+        <div class="container feature-item reverse d-flex flex-wrap align-items-center gap-4">
+            <div class="feature-text flex-fill">
+                <h2>Diseñados para la velocidad</h2>
+                <p>Los motores BMW M son el resultado de décadas de ingeniería deportiva. Aceleración de 0 a 100 km/h en menos de 4 segundos.</p>
+                <a href="#" class="feature-link">Explorar motor M TwinPower <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="feature-image flex-fill text-center">
+                <img src="bmwcar.jpg" alt="Motor BMW M TwinPower">
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section bg-light">
+        <div class="container feature-item d-flex flex-wrap align-items-center gap-4">
+            <div class="feature-text flex-fill">
+                <h2>Diseño aerodinámico y elegante</h2>
+                <p>Cada línea está optimizada para el rendimiento. La fusión entre forma y función crea una experiencia única en la carretera.</p>
+                <a href="#" class="feature-link">Ver diseño M Performance <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="feature-image flex-fill text-center">
+                <img src="bmw.jpg" alt="Diseño aerodinámico BMW">
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container feature-item reverse d-flex flex-wrap align-items-center gap-4">
+            <div class="feature-text flex-fill">
+                <h2>Tecnología y conectividad</h2>
+                <p>Controla cada aspecto de tu BMW desde la app MyBMW. Navegación avanzada, asistencia en carretera y estadísticas en tiempo real.</p>
+                <a href="#" class="feature-link">Descubre BMW ConnectedDrive <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="feature-image flex-fill text-center">
+                <img src="bmw1.jpeg" alt="Tecnología ConnectedDrive">
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section bg-light">
+        <div class="container feature-item d-flex flex-wrap align-items-center gap-4">
+            <div class="feature-text flex-fill">
+                <h2>Experiencia de conducción incomparable</h2>
+                <p>Desde el asiento del conductor hasta la última curva, cada BMW está diseñado para ofrecer emoción pura y control total.</p>
+                <a href="#" class="feature-link">Conoce la experiencia M Drive <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="feature-image flex-fill text-center">
+                <img src="bmwcar.jpg" alt="Experiencia de conducción">
+            </div>
+        </div>
+    </section>
+
+  <!-- Pao -->
+  <section class="opiniones">
+    <div class="contenedor">
+      <p class="subtitulo">Elige el financiamiento y los paquetes adecuados para el vehículo que has elegido.</p>
+      <h2 class="titulo-seccion">Al alcance de la mano. Tu nuevo BMW.</h2>
+
+      <div class="cuadros-opinion">
+        <div class="opinion">
+          <h3 class="op-titulo">Financiamiento BMW</h3>
+          <p class="op-texto">Hacemos que te resulte más fácil conseguir tu propio BMW. Una vez completado el pago, el vehículo es todo tuyo. Con kilómetros ilimitados, podrás viajar tan lejos como quieras. Organiza el financiamiento como más te convenga.</p>
+        </div>
+
+        <div class="opinion">
+          <h3 class="op-titulo">Leasing BMW</h3>
+          <p class="op-texto">Disfruta de la máxima libertad y flexibilidad financiera. Con atractivas cuotas mensuales, plazos de duración adaptados a tus deseos y la posibilidad de cambiar tu vehículo actual por uno nuevo periódicamente. Y sin compromiso a largo plazo.</p>
+        </div>
+
+        <div class="opinion">
+          <h3 class="op-titulo">Portal de clientes</h3>
+          <p class="op-texto">En el portal de clientes puedes administrar tus contratos, consultar pagos o descargar tus documentos. Así siempre estarás al día con tu BMW.</p>
+        </div>
+
+        <div class="opinion">
+          <h3 class="op-titulo">Atención al cliente</h3>
+          <p class="op-texto">¿Tienes dudas o necesitas más información sobre las ofertas o seguros? Ponte en contacto con el servicio de atención al cliente BMW.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bannerfinal">
+    The M5 Sedan.
+  </section>
+
+  <footer>
+    <div>
+      <h3>Practica 5</h3>
+      <a href="#">Trabajo</a>
+      <a href="#">en</a>
+      <a href="#">equipo</a>
+      <a href="#">:|</a>
+    </div>
+    <div>
+      <h3>Hola</h3>
+      <a href="#">Como</a>
+      <a href="#">estas</a>
+      <a href="#">hoy?</a>
+    </div>
+    <div>
+      <h3>Precios</h3>
+      <a href="#">del</a>
+      <a href="#">carro es</a>
+      <a href="#">2,949,9000 MXN</a>
+      <a href="#">Que caro</a>
+    </div>
+  </footer>    
+
+  </section>
+
+</body>
+</html>
